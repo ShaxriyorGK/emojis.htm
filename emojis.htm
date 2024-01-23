@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emojies</title>
+  
+  <style>
+    
+    body{
+      justify-content: center;
+      background-color: #d5fff4;
+    }
+
+    p{
+      font-size: 1700%;
+      border: solid 5px #ff6a6a;
+      border-radius: 20px;
+      margin: 5px;
+    }
+
+    input, button{
+      margin: 1px;
+      background-color: aliceblue;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  
+  <p>
+    &#128506
+  </p>
+  <p>
+    &#128591
+  </p>
+  <p>
+    &#128640
+  </p>
+  <p>
+    &#128764
+  </p>
+  
+  <h1>Emoji or symbol printer</h1>
+  <input id="input" placeholder="input code of emoji or symbol">
+  <button onclick="fun()">Sumbit</button>
+  <p id="value">&#1285185</p>
+  
+  <script>
+    
+    var txt = '';
+    function fun(){
+      txt = document.getElementById('input').value;
+      if(txt !== ''){
+        document.getElementById('value').innerHTML = txt;
+      }
+    }
+
+  </script>
+  
+</body>
+</html>
